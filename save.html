@@ -1,6 +1,8 @@
 <html>
 <head>
     <title>File Uploader</title>
+    <link rel="import" id="template-file" href="index.html">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" >
         function preventBack(){window.history.forward();}
         setTimeout("preventBack()", 0);
@@ -8,20 +10,19 @@
     </script>
 </head>
     <body>
-        <!-- <div class="container"> -->
-            <!-- <div class="main"> -->
-                <h1>Saved!!!</h1>
-                <div w3-include-html="index.html">
-                    <script type="text/javascript">
-                        var fileuploaded1 = document.getElementById("filetoupload1").value;
-                        var fileuploaded2 = document.getElementById("filetoupload2").value;
-                        var fileuploaded3 = document.getElementById("filetoupload3").value;
-                        var fileuploaded4 = document.getElementById("filetoupload4").value;
-                        
-                        document.write("Yuhu!!!");
-                    </script>
-                </div>
-            <!-- </div> -->
-        <!-- </div> -->
+        <div class="container">
+            <div class="main">
+                <button type="button" value="Logout" id="submit" onclick="logout()"/>Logout
+                <button type="button" value="New Files" id="submit" onclick="newFiles()"/>New Files
+                <script type="text/javascript">
+                    function logout(){
+                        window.location = "login.html";
+                    }
+                    function newFiles(){
+                        window.location = "index.html";
+                    }
+                </script>
+            </div>
+        </div>
     </body>
 </html>
