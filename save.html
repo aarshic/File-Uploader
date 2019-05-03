@@ -2,7 +2,7 @@
 <head>
     <title>File Uploader</title>
     <link rel="import" id="template-file" href="index.html">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" >
         function preventBack(){window.history.forward();}
         setTimeout("preventBack()", 0);
@@ -10,10 +10,10 @@
     </script>
 </head>
     <body>
-        <div class="container">
+        <div class="container" style="margin-top: 7%">
             <div class="main">
-                <button type="button" value="Logout" id="submit" onclick="logout()"/>Logout
-                <button type="button" value="New Files" id="submit" onclick="newFiles()"/>New Files
+                <button type="button" value="Logout" id="submit" onclick="logout()" style="width:30%;height:15%;margin:15% 0% 15% 10%"/>Logout
+                <button type="button" value="New Files" id="submit" onclick="newFiles()"style="width:30%;height:15%;margin:15% 0% 15% 20%;"/>New Files
                 <script type="text/javascript">
                     function logout(){
                         window.location = "login.html";
