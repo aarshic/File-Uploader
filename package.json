@@ -1,0 +1,27 @@
+{
+  "name": "file_uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarshic/File-Uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarshic/File-Uploader/issues"
+  },
+  "homepage": "https://github.com/aarshic/File-Uploader#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "formidable": "^1.2.1",
+    "http": "0.0.0",
+    "mongoose": "^5.5.5",
+    "nodemon": "^1.19.0"
+  }
+}
