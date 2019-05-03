@@ -4,8 +4,8 @@
     <!-- Include CSS File Here -->
     <link rel="stylesheet" href="css/style.css"/>
     <!-- Include JS File Here -->
-    <script src="index.js"></script>
-    <!-- <script src="parse.js"></script> -->
+    <script src="submission.js"></script>
+    <!-- <script src="login.js"></script> -->
     <!-- <script src="save.js"></script> -->
 </head>
 <body>
@@ -13,36 +13,36 @@
         <div class="main">
             <h2>Upload the following files</h2>
             </form>
-            <form method="post" id="fileupload" name="fileupload">
-                <label>Resume</label>
-                <input type="file" name="filetoupload1" id="filetoupload1" required><br>
-                <label>Cover Letter</label>
-                <input type="file" name="filetoupload2" id="filetoupload2" required><br>
-                <label>Photo</label>
-                <input type="file" name="filetoupload3" id="filetoupload3" required><br>
-                <label>Birth Certificate</label>
-                <input type="file" name="filetoupload4" id="filetoupload4" required><br>
-                <label>Any additional document</label>
+            <form id="fileupload" method="post" name="fileupload">
+                <label>Resume :</label>
+                <input type="file" name="filetoupload1" id="filetoupload1"><br>
+                <label>Cover Letter :</label>
+                <input type="file" name="filetoupload2" id="filetoupload2"><br>
+                <label>Photo :</label>
+                <input type="file" name="filetoupload3" id="filetoupload3"><br>
+                <label>Birth Certificate :</label>
+                <input type="file" name="filetoupload4" id="filetoupload4"><br>
+                <label>Any additional document :</label>
                 <input type="file" name="filetoupload5" id="filetoupload5"><br>
-                <input type="button" value="upload" id="submit" onclick="validateMyForm()"/>               
-                <!-- <a href="save.html" value="Upload">Upload</a> -->
+                <!-- <button onclick="yuhu()"></button> -->
+                <button type="button" value="Upload" id="submit" onclick="upload()"/>Upload
             </form>
             <script type="text/javascript">
-                function validateMyForm()
+                function upload()
                 {
                     var fileuploaded1 = document.getElementById("filetoupload1").value;
                     var fileuploaded2 = document.getElementById("filetoupload2").value;
                     var fileuploaded3 = document.getElementById("filetoupload3").value;
                     var fileuploaded4 = document.getElementById("filetoupload4").value;
 
-                    if(fileuploaded1.value.length != null && fileuploaded2.value.length != null && fileuploaded3.value.length != null && fileuploaded4.value.length != null){
+                    // if(fileuploaded1.value.length != null && fileuploaded2.value.length != null && fileuploaded3.value.length != null && fileuploaded4.value.length != null){
                         alert ("Saved successfully");
                         window.location = "save.html";
-                        return false;
-                    }
-                    else{
-                        alert("Field Required!!!");
-                    }
+                        // return false;
+                    // }
+                    // else{
+                        // alert("Field Required!!!");
+                    // }
                 }
                 </script>
             <!-- <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span> -->
