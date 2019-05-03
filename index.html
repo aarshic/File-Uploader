@@ -1,16 +1,13 @@
 <html>
 <head>
     <title>File Uploader</title>
-    <!-- Include CSS File Here -->
     <link rel="stylesheet" href="css/index.css"/>
-    <!-- Include JS File Here -->
     <script src="submission.js"></script>
     <script type="text/javascript" >
         function preventBack(){window.history.forward();}
         setTimeout("preventBack()", 0);
         window.onunload=function(){null};
     </script>
-    <!-- <script src="save.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -28,7 +25,6 @@
                 <input type="file" name="filetoupload4" id="filetoupload4"><br>
                 <label>Any additional document :</label>
                 <input type="file" name="filetoupload5" id="filetoupload5"><br>
-                <!-- <button onclick="yuhu()"></button> -->
                 <button type="button" value="Upload" id="submit" onclick="required()"/>Upload
             </form>
             <script type="text/javascript">
@@ -42,32 +38,18 @@
                         return false;
                     }
                     else{
-                        // alert('Code has accepted : you can try another');
-                        // return true; 
                         upload()
                     }
                 }
-                function upload()
-                {
-                    // window.onbeforeunload = function() { 
-                    //     alert("Your work will be lost."); 
-                    // };
-                    var fileuploaded1 = document.getElementById("filetoupload1").value;
-                    var fileuploaded2 = document.getElementById("filetoupload2").value;
-                    var fileuploaded3 = document.getElementById("filetoupload3").value;
-                    var fileuploaded4 = document.getElementById("filetoupload4").value;
-
-                    // if(fileuploaded1.value.length != null && fileuploaded2.value.length != null && fileuploaded3.value.length != null && fileuploaded4.value.length != null){
-                        alert ("Saved successfully");
-                        window.location = "save.html";
-                        // return false;
-                    // }
-                    // else{
-                        // alert("Field Required!!!");
-                    // }
+                function upload(){
+                    // var fileuploaded1 = document.getElementById("filetoupload1").value;
+                    // var fileuploaded2 = document.getElementById("filetoupload2").value;
+                    // var fileuploaded3 = document.getElementById("filetoupload3").value;
+                    // var fileuploaded4 = document.getElementById("filetoupload4").value;
+                    alert ("Saved successfully");
+                    window.location = "save.html";
                 }
                 </script>
-            <!-- <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span> -->
         </div>
     </div>
 </body>
